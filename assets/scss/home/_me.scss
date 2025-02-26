@@ -1,0 +1,51 @@
+.me {
+    display: flex;
+    place-items: center;
+    padding: 50px 0;
+    margin-bottom: 50px;
+
+    >div {
+        display: flex;
+        place-content: center;
+        place-items: center;
+        gap: 50px;
+        flex-direction: column;
+
+        @media (min-width: 992px) {
+            flex-direction: row;
+            gap: 100px;
+        }
+
+        img {
+            width: 200px;
+        }
+
+        h2 {
+            font-size: 30px;
+            font-weight: 300;
+            margin: 0;
+        }
+
+        .link {
+            position: relative;
+            margin-top: 50px;
+            margin-left: 100px;
+
+            a {
+                background-color: #193761;
+                color: #fff;
+                padding: 15px 30px;
+                border-radius: 20px;
+                display: block;
+                width: fit-content;
+            }
+
+            img {
+                position: absolute;
+                width: 50px;
+                left: -70px;
+                bottom: -50px;
+            }
+        }
+    }
+}

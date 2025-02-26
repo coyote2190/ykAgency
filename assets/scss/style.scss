@@ -1,0 +1,33 @@
+// Theme Name: YK Agency Theme
+// Author: Yannick Khalfouni
+// Author URI: https://yklic.fr
+// Description: Un thème WordPress minimaliste pour une agence.
+// Version: 1.0
+// License: GNU General Public License v2 or later
+// License URI: https://www.gnu.org/licenses/gpl-2.0.html
+// Text Domain: hello-portfolio-theme
+
+// Import des fonctions et variables de Bootstrap (nécessaire)
+@import 'reset';
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+// Redéfinir la largeur max du container
+$container-max-widths: (
+    xl: 1520px,
+    xxl: 1520px
+);
+
+// Styles globaux
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+//commons
+@import 'commons/typography';
+@import 'commons/header';
+@import 'commons/footer';
+
+// //page Home
+@import 'home/welcome';
+@import 'home/me';
+@import 'home/clients';

@@ -1,0 +1,20 @@
+{
+  "name": "ykagency",
+  "version": "1.0.0",
+  "description": "Theme Wordpress ykagency",
+  "main": "index.js",
+  "scripts": {
+    "dev": "sass --watch --style=compressed assets/scss/style.scss style.css",
+    "prettier": "prettier"
+  },
+  "author": "yk",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.7.2",
+    "bootstrap": "^5.3.3"
+  },
+  "devDependencies": {
+    "@prettier/plugin-php": "^0.22.4",
+    "prettier": "^3.5.2"
+  }
+}

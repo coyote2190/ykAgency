@@ -1,0 +1,46 @@
+.clients {
+    display: flex;
+    place-items: center;
+    padding: 50px 0;
+    margin-bottom: 50px;
+
+    >div {
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+            text-align: center;
+        }
+
+        >div {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            place-items: center;
+            place-content: space-evenly;
+
+            @media (min-width: 992px) {
+                gap: 100px;
+                place-content: center;
+            }
+
+
+            a {
+                display: flex;
+                height: 100px;
+                place-content: center;
+                place-items: center;
+
+                img {
+                    width: 150px;
+
+                    @media (min-width: 992px) {
+                        width: 180px;
+                    }
+                }
+            }
+        }
+
+    }
+}
